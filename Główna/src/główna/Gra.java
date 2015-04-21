@@ -63,7 +63,17 @@ public class Gra {
      * Wymagania systemowe potrzebne do uruchomienia gry
      */
     private WymaganiaSystemowe wymagania;
-
+    /**
+     * Konstruktor Gry
+     * @param tytuł nadanie tutułu gry
+     * @param rodzaj nadanie rodzaju gry
+     * @param producent nazwa producenta gry
+     * @param wydawca nazwa wydawcy gry
+     * @param dataWydania data wydania tej gry
+     * @param wersjeJęzykowe mozliwe wersje jezykowe gry
+     * @param opis opis danej gry
+     * @param wymagania wymagania systemowe aby gra sie uruchomiła
+     */
     public Gra(String tytuł, rodzajGry[] rodzaj, String producent, String wydawca, Data dataWydania, String[] wersjeJęzykowe, String opis, WymaganiaSystemowe wymagania) {
         this.tytuł = tytuł;
         this.rodzaj = rodzaj;
