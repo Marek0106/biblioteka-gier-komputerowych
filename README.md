@@ -1,13 +1,10 @@
 # biblioteka-gier-komputerowych
 Repozytorium do projektu Gier Komputerowych
 Zespołowy projekt informatyczny Biblioteka gier komputerowych
-
 Celem projektu jest utworzenie programu służącego do przechowywania informacji o grach kompu
 terowych. Program powinien spełniać następujące założenia:
-
 -program powinien być odpowiednio podzielony na klasy, które reprezentują pewne informa
 cje i wykonują odpowiednie operacje,
-
 -należy przechowywać następujące informacje o każdej grze: tytuł gry, rodzaj gry, producen
 ta, wydawcę, datę wydania, informacje o wersjach językowych, opis gry, wymagania syste
 mowe,
