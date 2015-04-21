@@ -1,12 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package główna;
 
 /**
- *
+ * 
  * @author student
  */
 
@@ -34,12 +30,36 @@ enum rodzajGry {
 }
 
 public class Gra {
+    /**
+     * Tytuł gry
+     */
     private String tytuł;
+    /**
+     * Rodzaj gry wybrany z listy enmu RodzajGry
+     */
     private rodzajGry [] rodzaj;
+    /**
+     * Producent Gry
+     */
     private String producent;
+    /**
+     * Wydawca Gry
+     */
     private String wydawca;
+    /**
+     * Data wydania gry
+     */
     private Data dataWydania;
+    /**
+     * dostępne wersje jężykowe gry
+     */
     private String [] wersjeJęzykowe;
+    /**
+     * krótki opis gry
+     */
     private String opis;
+    /**
+     * Wymagania systemowe potrzebne do uruchomienia gry
+     */
     private WymaganiaSystemowe wymagania;
 }
