@@ -30,6 +30,7 @@ enum rodzajGry {
 }
 
 public class Gra {
+    
     /**
      * Tytuł gry
      */
@@ -62,4 +63,92 @@ public class Gra {
      * Wymagania systemowe potrzebne do uruchomienia gry
      */
     private WymaganiaSystemowe wymagania;
+
+    public Gra(String tytuł, rodzajGry[] rodzaj, String producent, String wydawca, Data dataWydania, String[] wersjeJęzykowe, String opis, WymaganiaSystemowe wymagania) {
+        this.tytuł = tytuł;
+        this.rodzaj = rodzaj;
+        this.producent = producent;
+        this.wydawca = wydawca;
+        this.dataWydania = dataWydania;
+        this.wersjeJęzykowe = wersjeJęzykowe;
+        this.opis = opis;
+        this.wymagania = wymagania;
+    }
+
+    public String getTytuł() {
+        return tytuł;
+    }
+
+    public void setTytuł(String tytuł) {
+        this.tytuł = tytuł;
+    }
+
+    public rodzajGry[] getRodzaj() {
+        return rodzaj;
+    }
+
+    public void setRodzaj(rodzajGry[] rodzaj) {
+        this.rodzaj = rodzaj;
+    }
+
+    public String getProducent() {
+        return producent;
+    }
+
+    public void setProducent(String producent) {
+        this.producent = producent;
+    }
+
+    public String getWydawca() {
+        return wydawca;
+    }
+
+    public void setWydawca(String wydawca) {
+        this.wydawca = wydawca;
+    }
+
+    public Data getDataWydania() {
+        return dataWydania;
+    }
+
+    public void setDataWydania(Data dataWydania) {
+        this.dataWydania = dataWydania;
+    }
+
+    public String[] getWersjeJęzykowe() {
+        return wersjeJęzykowe;
+    }
+
+    public void setWersjeJęzykowe(String[] wersjeJęzykowe) {
+        this.wersjeJęzykowe = wersjeJęzykowe;
+    }
+
+    public String getOpis() {
+        return opis;
+    }
+
+    public void setOpis(String opis) {
+        this.opis = opis;
+    }
+
+    public WymaganiaSystemowe getWymagania() {
+        return wymagania;
+    }
+
+    public void setWymagania(WymaganiaSystemowe wymagania) {
+        this.wymagania = wymagania;
+    }
+    
+    public static void Dodaj(){
+        
+    }
+    
+    public static void Usuń() {
+        
+    }
+    
+    public static void WyswietlTytuł() {
+        
+    }
 }
+
