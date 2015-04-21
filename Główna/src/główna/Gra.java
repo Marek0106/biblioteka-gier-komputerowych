@@ -147,7 +147,19 @@ public class Gra {
         
     }
     
-    public static void WyswietlTytuł() {
+    public static void WyświetlTytuł() {
+        
+    }
+    
+    public static void WyświetlGryProducenta() {
+        
+    }
+    
+    public static void WyświetlGryWydawcy () {
+        
+    }
+    
+    public static void WyszukajGrę() {
         
     }
 }
