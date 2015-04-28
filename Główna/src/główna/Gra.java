@@ -196,27 +196,39 @@ public class Gra {
     public void setWymagania(WymaganiaSystemowe wymagania) {
         this.wymagania = wymagania;
     }
-    
+    /*
+    Dodaje nowa Gre
+    */
     public static void Dodaj(){
         
     }
-    
+    /*
+    Usuwa wybraną gre z listy
+    */
     public static void Usuń() {
         
     }
-    
+    /*
+    Wyświetla wybrany Tytuł
+    */
     public static void WyświetlTytuł() {
         
     }
-    
+    /*
+    Wyświetla wszystkie gry producenta 
+    */
     public static void WyświetlGryProducenta() {
         
     }
-    
+    /*
+    Wyświetla wszystkie gry danego wydawcy
+    */
     public static void WyświetlGryWydawcy () {
         
     }
-    
+    /*
+    Wyszukuje Gre z listy
+    */
     public static void WyszukajGrę() {
         
     }
