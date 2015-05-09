@@ -232,5 +232,9 @@ public class Gra {
     public static void WyszukajGrę() {
         
     }
+     public String toString() {
+        return "Gra: "+tytuł+", producent: "+producent+", rodzaj: "+rodzaj+", wydawca: "+wydawca+", data wydania: "+dataWydania+", wersje językowe: "+wersjeJęzykowe+", opis gry: "+opis+", wymagania systemowe: "+wymagania;
+
+     }
 }
 
