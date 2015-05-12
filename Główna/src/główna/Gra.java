@@ -6,28 +6,6 @@ package główna;
  * @author student
  */
 
-enum rodzajGry {
-    akcja,
-    ekonomiczna,
-    FPP,
-    FPS,
-    horror,
-    logiczna,
-    otwartyŚwiat,
-    platformowa,
-    przygodowa,
-    RPG,
-    RTS,
-    sandbox,
-    skradanka,
-    strategia,
-    strzelanka,
-    survival,
-    symulator,
-    taktyczna,
-    wyścigowa,
-    zręcznościowa
-}
 
 public class Gra {
     
@@ -38,7 +16,7 @@ public class Gra {
     /**
      * Rodzaj gry wybrany z listy enmu RodzajGry
      */
-    private rodzajGry [] rodzaj;
+    private String rodzajGry ;
     /**
      * Producent Gry
      */
@@ -54,7 +32,7 @@ public class Gra {
     /**
      * dostępne wersje jężykowe gry
      */
-    private String [] wersjeJęzykowe;
+    private String  wersjeJęzykowe;
     /**
      * krótki opis gry
      */
@@ -74,9 +52,9 @@ public class Gra {
      * @param opis opis danej gry
      * @param wymagania wymagania systemowe aby gra sie uruchomiła
      */
-    public Gra(String tytuł, rodzajGry[] rodzaj, String producent, String wydawca, Data dataWydania, String[] wersjeJęzykowe, String opis, WymaganiaSystemowe wymagania) {
+    public Gra(String tytuł, String rodzajGry, String producent, String wydawca, Data dataWydania, String wersjeJęzykowe, String opis, WymaganiaSystemowe wymagania) {
         this.tytuł = tytuł;
-        this.rodzaj = rodzaj;
+        this.rodzajGry = rodzajGry;
         this.producent = producent;
         this.wydawca = wydawca;
         this.dataWydania = dataWydania;
@@ -102,14 +80,14 @@ public class Gra {
      * pobierz rodzaj
      * @return wyświetl rodzaj
      */
-    public rodzajGry[] getRodzaj() {
+    public rodzajGry getRodzaj() {
         return rodzaj;
     }
     /**
      * ustaw rodzaj 
      * @param rodzaj przypisuje rodzaj do tego parametru
      */
-    public void setRodzaj(rodzajGry[] rodzaj) {
+    public void setRodzaj(rodzajGry rodzaj) {
         this.rodzaj = rodzaj;
     }
     /**
@@ -158,14 +136,14 @@ public class Gra {
      * pobierz wersję językowe
      * @return wyświetl wersje językowe
      */
-    public String[] getWersjeJęzykowe() {
+    public String getWersjeJęzykowe() {
         return wersjeJęzykowe;
     }
     /**
      * ustaw wersje językowe
      * @param wersjeJęzykowe przypisuje wersje językowe do tego parametru
      */
-    public void setWersjeJęzykowe(String[] wersjeJęzykowe) {
+    public void setWersjeJęzykowe(String wersjeJęzykowe) {
         this.wersjeJęzykowe = wersjeJęzykowe;
     }
     /**
@@ -196,45 +174,9 @@ public class Gra {
     public void setWymagania(WymaganiaSystemowe wymagania) {
         this.wymagania = wymagania;
     }
-    /*
-    Dodaje nowa Gre
-    */
-    public static void Dodaj(){
-        
-    }
-    /*
-    Usuwa wybraną gre z listy
-    */
-    public static void Usuń() {
-        
-    }
-    /*
-    Wyświetla wybrany Tytuł
-    */
-    public static void WyświetlTytuł() {
-        
-    }
-    /*
-    Wyświetla wszystkie gry producenta 
-    */
-    public static void WyświetlGryProducenta() {
-        
-    }
-    /*
-    Wyświetla wszystkie gry danego wydawcy
-    */
-    public static void WyświetlGryWydawcy () {
-        
-    }
-    /*
-    Wyszukuje Gre z listy
-    */
-    public static void WyszukajGrę() {
-        
-    }
-     public String toString() {
-        return "Gra: "+tytuł+", producent: "+producent+", rodzaj: "+rodzaj+", wydawca: "+wydawca+", data wydania: "+dataWydania+", wersje językowe: "+wersjeJęzykowe+", opis gry: "+opis+", wymagania systemowe: "+wymagania;
+   public String toString() {
+        return "Gra: " + tytuł + ", producent: " + producent + ", rodzaj: " + rodzaj + ", wydawca: " + wydawca + ", data wydania: " + dataWydania + ", wersje językowe: " + wersjeJęzykowe + ", opis gry: " + opis + ", wymagania systemowe: " + wymagania;
 
-     }
+   }
 }
 
