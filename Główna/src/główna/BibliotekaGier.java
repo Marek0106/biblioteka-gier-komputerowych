@@ -12,6 +12,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
+import java.util.StringTokenizer;
 
 /**
  *
@@ -47,7 +48,7 @@ public class BibliotekaGier {
             wersjeJęzykowe = zrodlo.readLine();
             opis = zrodlo.readLine();
             wymagania = zrodlo.readLine();
-            
+  
              lista[i] = new Gra(tytuł, rodzaj, producent, wydawca, dataWydania, wersjeJęzykowe, opis, wymagania);
     }//public void wczytajZPliku
            }
