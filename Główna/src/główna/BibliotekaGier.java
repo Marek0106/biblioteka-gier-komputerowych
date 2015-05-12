@@ -48,7 +48,7 @@ public class BibliotekaGier {
             wersjeJęzykowe = zrodlo.readLine();
             opis = zrodlo.readLine();
             wymagania = zrodlo.readLine();
-  
+  //tokenaizerem albo pętlą zamienić rodzaj i wersje językowe na string;
              lista[i] = new Gra(tytuł, rodzaj, producent, wydawca, dataWydania, wersjeJęzykowe, opis, wymagania);
     }//public void wczytajZPliku
            }
