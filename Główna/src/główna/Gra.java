@@ -80,15 +80,15 @@ public class Gra {
      * pobierz rodzaj
      * @return wyświetl rodzaj
      */
-    public rodzajGry getRodzaj() {
-        return rodzaj;
+    public String getRodzajGry() {
+        return rodzajGry;
     }
     /**
      * ustaw rodzaj 
      * @param rodzaj przypisuje rodzaj do tego parametru
      */
-    public void setRodzaj(rodzajGry rodzaj) {
-        this.rodzaj = rodzaj;
+    public void setRodzaj(String rodzajGry) {
+        this.rodzajGry = rodzajGry;
     }
     /**
      * pobierz Producenta 
@@ -175,7 +175,7 @@ public class Gra {
         this.wymagania = wymagania;
     }
    public String toString() {
-        return "Gra: " + tytuł + ", producent: " + producent + ", rodzaj: " + rodzaj + ", wydawca: " + wydawca + ", data wydania: " + dataWydania + ", wersje językowe: " + wersjeJęzykowe + ", opis gry: " + opis + ", wymagania systemowe: " + wymagania;
+        return "Gra: " + tytuł + ", producent: " + producent + ", rodzaj: " + rodzajGry + ", wydawca: " + wydawca + ", data wydania: " + dataWydania + ", wersje językowe: " + wersjeJęzykowe + ", opis gry: " + opis + ", wymagania systemowe: " + wymagania;
 
    }
 }
