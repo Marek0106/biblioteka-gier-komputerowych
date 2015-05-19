@@ -28,7 +28,23 @@ public class BibliotekaGier {
         liczbaGier = 0;
     }//public ListaKsiazek
 
-           public void wczytajZPliku(String nazwaPliku) throws FileNotFoundException, IOException {
+    public void zapiszDoPliku(String nazwaPliku) throws IOException {
+        try (PrintWriter wynik = new PrintWriter(new FileWriter(nazwaPliku))) {
+            wynik.println(liczbaGier);
+            for (int i = 0; i < liczbaGier; i++) {
+                wynik.println(lista[i].getTytuł());
+                wynik.println(lista[i].getRodzajGry());
+                wynik.println(lista[i].getWydawca());
+                wynik.println(lista[i].getProducent());
+                wynik.println(lista[i].getWymagania());
+                wynik.println(lista[i].getWersjeJęzykowe());
+                wynik.println(lista[i].getDataWydania());
+                wynik.println(lista[i].getOpis());
+            }//for
+        }
+    }//public void zapiszDoPliku
+
+    public void wczytajZPliku(String nazwaPliku) throws FileNotFoundException, IOException {
         String tytuł;
         String rodzaj;
         String producent;
@@ -48,28 +64,10 @@ public class BibliotekaGier {
             wersjeJęzykowe = zrodlo.readLine();
             opis = zrodlo.readLine();
             wymagania = zrodlo.readLine();
-  //tokenaizerem albo pętlą zamienić rodzaj i wersje językowe na string;
-             lista[i] = new Gra(tytuł, rodzaj, producent, wydawca, dataWydania, wersjeJęzykowe, opis, wymagania);
+            lista[i] = new Gra(tytuł, rodzaj, producent, wydawca, dataWydania, wersjeJęzykowe, opis, wymagania);
+        }//for
+        zrodlo.close();
     }//public void wczytajZPliku
-           }
-
-    public void zapiszDoPliku(String nazwaPliku) throws IOException {
-        try (PrintWriter wynik = new PrintWriter(new FileWriter(nazwaPliku))) {
-            wynik.println(liczbaGier);
-            for (int i = 0; i < liczbaGier; i++) {
-                wynik.println(lista[i].getTytuł()); 
-                wynik.println(Arrays.toString(lista[i].getRodzaj()));
-                wynik.println(lista[i].getWydawca());
-                wynik.println(lista[i].getProducent());
-                wynik.println(lista[i].getWymagania());
-                wynik.println(Arrays.toString(lista[i].getWersjeJęzykowe()));
-                wynik.println(lista[i].getDataWydania());
-                wynik.println(lista[i].getOpis());
-            }//for
-        }
-    }//public void zapiszDoPliku
-    
-    
 
 
 
