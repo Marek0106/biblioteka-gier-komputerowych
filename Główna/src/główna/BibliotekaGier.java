@@ -72,11 +72,17 @@ public class BibliotekaGier {
 
 public void dodaj(Gra nowa) {
         if (liczbaGier < lista.length) {
+            
+            
             lista[liczbaGier] = nowa;
+            
             liczbaGier++;
-            Gra[] lista = new Gra[liczbaGier];
+            
             
         }//if
+        else{
+            System.out.println("Nie można dodać gry ponieważ lista jest pełna");
+        }
     }
     
          public void wyświetlListe() {
