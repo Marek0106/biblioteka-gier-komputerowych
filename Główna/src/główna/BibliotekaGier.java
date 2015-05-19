@@ -70,11 +70,12 @@ public class BibliotekaGier {
     }//public void wczytajZPliku
 
 
-
 public void dodaj(Gra nowa) {
         if (liczbaGier < lista.length) {
             lista[liczbaGier] = nowa;
             liczbaGier++;
+            Gra[] lista = new Gra[liczbaGier];
+            
         }//if
     }
     
