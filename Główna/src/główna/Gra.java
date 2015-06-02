@@ -18,7 +18,7 @@ public class Gra {
      */
     private String rodzajGry ;
     /**
-     * Producent Gry
+     * Producent Gryyyy
      */
     private String producent;
     /**
