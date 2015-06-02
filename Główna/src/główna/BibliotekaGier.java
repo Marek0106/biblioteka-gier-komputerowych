@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.StringTokenizer;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -38,7 +39,7 @@ public class BibliotekaGier {
                 wynik.println(lista[i].getProducent());
                 wynik.println(lista[i].getWymagania());
                 wynik.println(lista[i].getWersjeJęzykowe());
-                wynik.println(lista[i].getDataWydania());
+                wynik.println(lista[i].getData());
                 wynik.println(lista[i].getOpis());
             }//for
         }
@@ -49,7 +50,7 @@ public class BibliotekaGier {
         String rodzaj;
         String producent;
         String wydawca;
-        String dataWydania;
+        String data;
         String wersjeJęzykowe;
         String opis;
         String wymagania;
@@ -60,36 +61,51 @@ public class BibliotekaGier {
             rodzaj = zrodlo.readLine();
             producent = zrodlo.readLine();
             wydawca = zrodlo.readLine();
-            dataWydania = zrodlo.readLine();
+            data = zrodlo.readLine();
             wersjeJęzykowe = zrodlo.readLine();
             opis = zrodlo.readLine();
             wymagania = zrodlo.readLine();
-            lista[i] = new Gra(tytuł, rodzaj, producent, wydawca, dataWydania, wersjeJęzykowe, opis, wymagania);
+            lista[i] = new Gra(tytuł, rodzaj, producent, wydawca, data, wersjeJęzykowe, opis, wymagania);
         }//for
         zrodlo.close();
     }//public void wczytajZPliku
 
+    public void dodaj(Gra nowaGra) {
 
-public void dodaj(Gra nowa) {
         if (liczbaGier < lista.length) {
-            
-            
-            lista[liczbaGier] = nowa;
-            
+            nowaGra = new Gra();
+            String tmp;
+            tmp = JOptionPane.showInputDialog("podaj tytuł gry");
+            nowaGra.setTytuł(tmp);
+            tmp = JOptionPane.showInputDialog("podaj tytuł rodzaj gry");
+            nowaGra.setRodzaj(tmp);
+            tmp = JOptionPane.showInputDialog("podaj producenta gry");
+            nowaGra.setProducent(tmp);
+            tmp = JOptionPane.showInputDialog("podaj wydawce gry");
+            nowaGra.setWydawca(tmp);
+            tmp = JOptionPane.showInputDialog("podaj datę wydania gry");
+            nowaGra.setData(tmp);
+            tmp = JOptionPane.showInputDialog("podaj wersje językowe gry");
+            nowaGra.setWersjeJęzykowe(tmp);
+            tmp = JOptionPane.showInputDialog("podaj opis gry");
+            nowaGra.setOpis(tmp);
+            tmp = JOptionPane.showInputDialog("podaj wymagania systemowe gry");
+            nowaGra.setWymagania(tmp);
+
+            lista[liczbaGier] = nowaGra;
             liczbaGier++;
-            
-            
+
         }//if
-        else{
+        else {
             System.out.println("Nie można dodać gry ponieważ lista jest pełna");
         }
     }
-    
-         public void wyświetlListe() {
-        for (int i=0; i<liczbaGier; i++) {
-            System.out.println((i+1)+") "+lista[i]);
+
+    public void wyświetlListe() {
+        for (int i = 0; i < liczbaGier; i++) {
+            System.out.println((i + 1) + ") " + lista[i]);
         }//for
-         }
+    }
 
     public static void Usuń() {
 
