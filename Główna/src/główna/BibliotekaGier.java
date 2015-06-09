@@ -11,8 +11,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Arrays;
-import java.util.StringTokenizer;
 import javax.swing.JOptionPane;
 
 /**
@@ -39,7 +37,7 @@ public class BibliotekaGier {
                 wynik.println(lista[i].getProducent());
                 wynik.println(lista[i].getWymagania());
                 wynik.println(lista[i].getWersjeJęzykowe());
-                wynik.println(lista[i].getData());
+                wynik.println(lista[i].getDataWydania());
                 wynik.println(lista[i].getOpis());
             }//for
         }
@@ -84,7 +82,7 @@ public class BibliotekaGier {
             tmp = JOptionPane.showInputDialog("podaj wydawce gry");
             nowaGra.setWydawca(tmp);
             tmp = JOptionPane.showInputDialog("podaj datę wydania gry");
-            nowaGra.setData(tmp);
+            nowaGra.setDataWydania(tmp);
             tmp = JOptionPane.showInputDialog("podaj wersje językowe gry");
             nowaGra.setWersjeJęzykowe(tmp);
             tmp = JOptionPane.showInputDialog("podaj opis gry");

@@ -34,7 +34,7 @@ public class WymaganiaSystemowe {
     public String toString () {
         String napis = "Wymagania systemowe:\n";
         napis += "Procesor " + archProc;
-        short n = taktProc / 1000;
+        int n = taktProc / 1000;
         napis += Integer.toString (n) + ',';
         n = taktProc - (taktProc / 1000) * 1000;
         napis += Integer.toString (n) + " GHz,\n";
