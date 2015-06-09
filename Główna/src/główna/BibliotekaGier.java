@@ -105,35 +105,82 @@ public class BibliotekaGier {
         }//for
     }
     /*
-    Metoda do usuwania gry z listy
-    */
+     Metoda do usuwania gry z listy
+     */
+
     public static void Usuń() {
 
     }
     /*
-    Metoda do wyświetlania tytułu gry
-    */
-    public static void WyświetlTytuł() {
+     Metoda do wyświetlania tytułu gry
+     */
 
+    public void WyświetlTytuł() {
+        String tmp1 = JOptionPane.showInputDialog("podaj tytuł gry, którą chcesz wyszukać");
+
+        for (int i = 0; i < liczbaGier; i++) {
+
+            if (lista[i].getTytuł().equals(tmp1)) {
+
+                System.out.print(lista[i]);
+            } else {
+                i++;
+            }
+
+        }
     }
     /*
-    Metoda do wyświetlania producenta gry
-    */
-    public static void WyświetlGryProducenta() {
+     Metoda do wyświetlania producenta gry
+     */
 
+    public void WyświetlGryProducenta() {
+        String tmp3 = JOptionPane.showInputDialog("podaj imię i nazwisko producenta, którego chcesz wyszukać");
+        for (int i = 0; i < liczbaGier; i++) {
+            if (lista[i].getProducent().equals(tmp3)) {
+
+                System.out.print(lista[i]);
+
+            } else {
+                i++;
+
+            }
+        }
+    }
+
+    /*
+     Metoda do wyśietlania wydawcy gry
+     */
+    public void WyświetlGryWydawcy() {
+        String tmp2 = JOptionPane.showInputDialog("podaj imię i nazwisko wydawcy, którego chcesz wyszukać");
+        for (int i = 0; i < liczbaGier; i++) {
+            if (lista[i].getTytuł().equals(tmp2)) {
+
+                System.out.print(lista[i]);
+
+            } else {
+                i++;
+
+            }
+        }
     }
     /*
-    Metoda do wyśietlania wydawcy gry
-    */
-    public static void WyświetlGryWydawcy() {
+     Medota do wyszukania gry z listy
+     */
 
+    public void WyszukajGrę() {
+        String tmp1 = JOptionPane.showInputDialog("podaj tytuł gry jaką chcesz wyszukać");
+
+        for (int i = 0; i < liczbaGier; i++) {
+
+            if (lista[i].getTytuł().equals(tmp1)) {
+
+                System.out.print(lista[i]);
+            } else {
+                i++;
+            }
+
+            //wybieranie z listy WyświetlMenu() if (wybór==1)
+        }
     }
-    /*
-    Medota do wyszukania gry z listy
-    */
-    public static void WyszukajGrę() {
 
-    }
-
-    //wybieranie z listy WyświetlMenu() if (wybór==1)
 }
