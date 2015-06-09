@@ -106,23 +106,33 @@ public class BibliotekaGier {
             System.out.println((i + 1) + ") " + lista[i]);
         }//for
     }
-
+    /*
+    Metoda do usuwania gry z listy
+    */
     public static void Usuń() {
 
     }
-
+    /*
+    Metoda do wyświetlania tytułu gry
+    */
     public static void WyświetlTytuł() {
 
     }
-
+    /*
+    Metoda do wyświetlania producenta gry
+    */
     public static void WyświetlGryProducenta() {
 
     }
-
+    /*
+    Metoda do wyśietlania wydawcy gry
+    */
     public static void WyświetlGryWydawcy() {
 
     }
-
+    /*
+    Medota do wyszukania gry z listy
+    */
     public static void WyszukajGrę() {
 
     }
